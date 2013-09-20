@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="25.0" maxWidth="193.0" minHeight="25.0" minWidth="193.0" prefHeight="25.0" prefWidth="193.0" style="" xmlns:fx="http://javafx.com/fxml" fx:controller="magiccopier.CopierServiceProgressPaneController">
+  <children>
+    <ProgressIndicator fx:id="copierServiceProgressIndicator" cache="false" prefHeight="43.0" progress="0.0" style="-fx-font-size: 0;" AnchorPane.bottomAnchor="-15.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="1.0" />
+    <Label fx:id="messageLable" prefHeight="25.0" prefWidth="129.0" text="Label" textFill="#040404" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="0.0" />
+    <Button fx:id="actionBitton" cache="true" cancelButton="true" contentDisplay="CENTER" defaultButton="false" maxWidth="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#action" prefWidth="25.0" style="-fx-background-color: red;" text="X" textAlignment="LEFT" textFill="#e5e5e5" textOverrun="CLIP" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="1.0">
+      <effect>
+        <DropShadow spread="0.015873015873015872" />
+      </effect>
+      <font>
+        <Font name="System Bold" size="10.0" />
+      </font>
+    </Button>
+  </children>
+  <stylesheets>
+    <URL value="@copierserviceprogresspane.css" />
+  </stylesheets>
+</AnchorPane>
