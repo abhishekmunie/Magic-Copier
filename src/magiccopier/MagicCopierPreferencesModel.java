@@ -85,7 +85,7 @@ public class MagicCopierPreferencesModel {
         scaledMaxSize.addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> ov, Number oldScaledMaxSize, Number newScaledMaxSize) {
-                if (newScaledMaxSize == 1.0) {
+                if (newScaledMaxSize.doubleValue() == 1.0) {
                     setMaxSize(Long.MAX_VALUE, StorageSizeUnit.TeraBytes);
                 } else {
                     setMaxSizeFromScaledSize(newScaledMaxSize.doubleValue(), sliderMaxValue.get());
