@@ -64,7 +64,7 @@ public class MagicCopierPreferencesModelTest {
         long size = 0L;
         StorageSizeUnit unit = null;
         double expResult = 0.0;
-        double result = MagicCopierPreferencesModel.scaleSize(size, unit);
+        double result = MagicCopierPreferencesModel.scaleSize(size, unit, 100);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -204,7 +204,7 @@ public class MagicCopierPreferencesModelTest {
         System.out.println("setMaxSizeFromScaledSize");
         double scaledSize = 0.0;
         MagicCopierPreferencesModel instance = new MagicCopierPreferencesModel();
-        instance.setMaxSizeFromScaledSize(scaledSize);
+        instance.setMaxSizeFromScaledSize(scaledSize, 100);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

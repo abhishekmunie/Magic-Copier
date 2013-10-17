@@ -17,56 +17,19 @@
         <TableColumn editable="false" maxWidth="81.0" minWidth="81.0" prefWidth="81.0" resizable="false" text="Size" fx:id="volumesTableSizeColumn" />
         <TableColumn editable="false" maxWidth="193.0" minWidth="193.0" prefWidth="193.0" resizable="false" sortable="false" text="Progress" fx:id="volumesTableProgressColumn" />
       </columns>
-      <effect>
-        <DropShadow color="#93a3f577" height="27.206349206349206" radius="13.103174603174603" spread="0.45238095238095233" width="27.206349206349206">
-          <input>
-            <ColorAdjust brightness="0.1428571428571428" contrast="0.0793650793650793" hue="0.14285714285714302" saturation="0.06349206349206371" />
-          </input>
-        </DropShadow>
-      </effect>
     </TableView>
-    <Button fx:id="browseButton" cancelButton="false" contentDisplay="CENTER" defaultButton="false" mnemonicParsing="false" onAction="#browse" prefWidth="73.0" text="Browse" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
-      <effect>
-        <ColorAdjust brightness="0.2857142857142856" contrast="0.23809523809523814" hue="1.0" saturation="0.2063492063492065" />
-      </effect>
-    </Button>
-    <TextField fx:id="destnationField" onDragDropped="#destinationFieldOnDragDropped" onDragOver="#destinationFieldOnDragOver" prefWidth="403.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0">
-      <effect>
-        <ColorAdjust hue="1.0" saturation="0.06349206349206349" />
-      </effect>
-    </TextField>
+    <Button fx:id="browseButton" cancelButton="false" contentDisplay="CENTER" defaultButton="false" mnemonicParsing="false" onAction="#browse" prefWidth="73.0" text="Browse" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+    <TextField fx:id="destnationField" onDragDropped="#destinationFieldOnDragDropped" onDragOver="#destinationFieldOnDragOver" prefWidth="403.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0" />
     <Label cache="true" labelFor="$destnationField" text="Destination" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="18.0" />
     <Label cache="true" text="Maximum Volume Size" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="56.0">
       <labelFor>
-        <Slider id="s" fx:id="maxSizeSlider" blockIncrement="1.0" focusTraversable="true" minorTickCount="4" prefWidth="284.0" showTickLabels="false" showTickMarks="true" snapToTicks="false" value="25.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="52.0">
-          <effect>
-            <Bloom threshold="0.7251908396946565">
-              <input>
-                <Lighting>
-                  <bumpInput>
-                    <Shadow />
-                  </bumpInput>
-                  <light>
-                    <javafx.scene.effect.Light.Distant color="#8fffc9ce" />
-                  </light>
-                </Lighting>
-              </input>
-            </Bloom>
-          </effect>
-        </Slider>
+        <Slider id="s" fx:id="maxSizeSlider" blockIncrement="1.0" focusTraversable="true" minorTickCount="4" prefWidth="284.0" showTickLabels="false" showTickMarks="true" snapToTicks="false" value="25.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="52.0" />
       </labelFor>
     </Label>
     <ProgressBar fx:id="totalProgressBar" prefWidth="570.0" progress="0.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
     <fx:reference source="maxSizeSlider" />
     <TextField fx:id="maxSizeField" prefWidth="67.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="52.0" />
     <ChoiceBox fx:id="maxSizeUnitChoiceBox" cache="true" prefWidth="59.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="52.0">
-      <effect>
-        <ColorAdjust hue="0.7142857142857144" saturation="0.4444444444444444">
-          <input>
-            <Glow />
-          </input>
-        </ColorAdjust>
-      </effect>
       <items>
         <FXCollections fx:factory="observableArrayList">
           <String fx:value="Item 1" />
